@@ -18,5 +18,5 @@ A abundance curve ggplot object
 Create species abundance curve
 }
 \examples{
-p <- (species, counts)
+p <- create_abun_curve(species, counts)
 }

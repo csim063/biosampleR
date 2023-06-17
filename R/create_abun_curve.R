@@ -6,7 +6,7 @@
 #' @return A abundance curve ggplot object
 #' @export
 #'
-#' @examples p <- (species, counts)
+#' @examples p <- create_abun_curve(species, counts)
 create_abun_curve <- function(species, counts){
   print("this is a test holder")
 }
