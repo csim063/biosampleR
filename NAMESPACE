@@ -2,3 +2,4 @@
 
 export(calc_diversity_indices)
 export(create_resample)
+export(get_sample_stats)
