@@ -23,5 +23,5 @@ Difference between Choa1 and species richness.
 Calculate biodiversity summary indices from count data
 }
 \examples{
-ind <- calculate_diversity_measures(BCI)
+ind <- calc_diversity_indices(BCI)
 }

@@ -13,7 +13,7 @@
 #' @export
 #'
 #' @examples
-#' ind <- calculate_diversity_measures(BCI)
+#' ind <- calc_diversity_indices(BCI)
 calc_diversity_indices <- function(data) {
     #* Calculate abundance per site
     abund <- as.data.frame(rowSums(data))
