@@ -24,7 +24,7 @@ create_resample <- function(data,
     tmp <- list()
 
     for (i in 1:reps){
-         n <- nrow(data)
+        n <- nrow(data)
         rand_inds <- sample(1:n, n, replace = TRUE)
         resample <- data[rand_inds, ]
         rownames(resample) <- NULL
