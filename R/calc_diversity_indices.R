@@ -40,7 +40,7 @@ calc_diversity_indices <- function(data) {
     chao1 <- rowSums(data > 0) +
         ((rowSums(data == 1) * (rowSums(data == 1) - 1)) /
         (2 * (rowSums(data == 2) + 1)))
-    chao1 <- data.frame(sites = rownames(data), 
+    chao1 <- data.frame(sites = rownames(data),
                         chao1 = as.numeric(chao1))
 
     #* Calculate difference between Chao1 and observed richness

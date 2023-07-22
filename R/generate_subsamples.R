@@ -46,7 +46,7 @@ generate_subsamples <- function(data,
             rownames(resample) <- NULL
 
             if (summary == TRUE) {
-                resample <- calc_diversity_indices(resample)
+                resample <- biosampleR::calc_diversity_indices(resample)
             }
 
             resample$rep <- i

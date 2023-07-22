@@ -6,7 +6,7 @@
 #'                analyze.
 #' @param site_name The name of the column containing the number of sites.
 #' @param rep_name The name of the column containing the repetition number.
-#' @param visulize A logical indicating whether to visualize the results.
+#' @param visualize A logical indicating whether to visualize the results.
 #'
 #' @return A data frame with the number of sites and the variance and standard
 #'       deviation of the mean of the biodiversity index for each number of
@@ -28,12 +28,12 @@
 #'              col_name = "richness",
 #'            site_name = "num_sites",
 #'         rep_name = "rep",
-#'      visulize = TRUE)
+#'      visualize = TRUE)
 calc_delta_var <- function(data,
                            col_name,
                            site_name = "num_sites",
                            rep_name = "rep",
-                           visulize = FALSE) {
+                           visualize = FALSE) {
     #* Create an empty data frame to store the results
     result <- data.frame(num_sites = numeric(),
                          variance = numeric(),
@@ -62,15 +62,18 @@ calc_delta_var <- function(data,
                                    stringsAsFactors = FALSE))
     }
 
-    return(result)
+    if (visualize == TRUE) {
+        p <- ggplot2::ggplot(result,
+                            ggplot2::aes(x = num_sites,
+                                        y = sd)) +
+                ggplot2::geom_point() +
+                ggplot2::geom_line() +
+                ggplot2::labs(x = "Number of sites",
+                            y = "Standard deviation") +
+                ggplot2::theme_minimal()
 
-    if (visulize == TRUE) {
-        ggplot2::ggplot(result,
-                        ggplot2::aes(x = num_sites, y = sd)) +
-            ggplot2::geom_point() +
-            ggplot2::geom_line() +
-            ggplot2::labs(x = "Number of sites",
-                          y = "Standard deviation") +
-            ggplot2::theme_minimal()
+        print(p)
     }
+
+    return(result)
 }

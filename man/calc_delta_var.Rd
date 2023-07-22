@@ -9,7 +9,7 @@ calc_delta_var(
   col_name,
   site_name = "num_sites",
   rep_name = "rep",
-  visulize = FALSE
+  visualize = FALSE
 )
 }
 \arguments{
@@ -23,7 +23,7 @@ analyze.}
 
 \item{rep_name}{The name of the column containing the repetition number.}
 
-\item{visulize}{A logical indicating whether to visualize the results.}
+\item{visualize}{A logical indicating whether to visualize the results.}
 }
 \value{
 A data frame with the number of sites and the variance and standard
@@ -47,5 +47,5 @@ calc_delta_var(data,
              col_name = "richness",
            site_name = "num_sites",
         rep_name = "rep",
-     visulize = TRUE)
+     visualize = TRUE)
 }

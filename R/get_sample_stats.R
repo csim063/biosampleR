@@ -8,7 +8,7 @@
 #'               all indices. Available indices are: abundance,
 #'              richness, shannon, simpson, chao1, and chao_diff.
 #' 
-#' @return A list of two data frames. The first data frame contains site 
+#' @return A list of two data frames. The first data frame contains site
 #'         specific data with sites as rows and summary statistics as columns.
 #'         The second contains an overall summary of the data.
 #' 
