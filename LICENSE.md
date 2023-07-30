@@ -1,6 +1,6 @@
 # MIT License
 
-Copyright (c) 2023 biosampleR authors
+Copyright (c) 2023 C. E. Simpkins
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
