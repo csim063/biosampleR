@@ -49,7 +49,7 @@ calc_delta_var <- function(data,
         tmp <- tmp[!is.na(tmp[[col_name]]), ]
 
         #* Calculate the mean for each repetition
-        mean_per_rep <- aggregate(tmp[[col_name]],
+        mean_per_rep <- stats::aggregate(tmp[[col_name]],
                                   by = list(tmp[[rep_name]]),
                                   FUN = mean)
 
@@ -57,13 +57,13 @@ calc_delta_var <- function(data,
         #* variance and sd of the means
         result <- rbind(result,
                         data.frame(num_sites = i,
-                                   variance = var(mean_per_rep$x),
-                                   sd = sd(mean_per_rep$x),
+                                   variance = stats::var(mean_per_rep$x),
+                                   sd = stats::sd(mean_per_rep$x),
                                    stringsAsFactors = FALSE))
     }
 
     if (visualize == TRUE) {
-        p <- ggplot2::ggplot(result,
+        p <- ggplot2::ggplot(data = result,
                             ggplot2::aes(x = num_sites,
                                         y = sd)) +
                 ggplot2::geom_point() +
