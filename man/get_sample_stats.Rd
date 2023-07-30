@@ -2,7 +2,8 @@
 % Please edit documentation in R/get_sample_stats.R
 \name{get_sample_stats}
 \alias{get_sample_stats}
-\title{Calculate summary statistics for a data set using repeated sampling}
+\title{Calculate biodiversity measures and summary statistics for a data set
+using repeated sampling}
 \usage{
 get_sample_stats(data, sites_col = 1, reps = 100, indices = "all")
 }
@@ -24,7 +25,8 @@ specific data with sites as rows and summary statistics as columns.
 The second contains an overall summary of the data.
 }
 \description{
-Calculate summary statistics for a data set using repeated sampling
+Calculate biodiversity measures and summary statistics for a data set
+using repeated sampling
 }
 \examples{
 stats <- get_sample_stats(BCI)

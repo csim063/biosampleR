@@ -1,4 +1,5 @@
-#' Calculate summary statistics for a data set using repeated sampling
+#' Calculate biodiversity measures and summary statistics for a data set
+#' using repeated sampling
 #' 
 #' @param data A data frame of count data,
 #'            with sites as rows and species as columns.
