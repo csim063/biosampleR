@@ -1,3 +1,3 @@
-# biosampleR (development version)
+# biosampleR
 
 * Initial CRAN submission.
