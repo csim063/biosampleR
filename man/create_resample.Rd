@@ -28,5 +28,5 @@ diversity indices calculated using
 Create multiple resamples of a data set.
 }
 \examples{
-rs <- create_resample(BCI)
+rs <- create_resample(BCI, reps = 10, summary = TRUE)
 }

@@ -17,9 +17,9 @@
 #' @examples
 #' ss <- generate_subsamples(BCI,
 #'                          min_sites = 1,
-#'                         max_sites = 10,
+#'                         max_sites = 5,
 #'                        step = 1,
-#'                      reps = 10)
+#'                      reps = 5)
 #' data <- ss
 #' data  <- unlist(data, recursive = FALSE)
 #' data <- do.call(rbind, data)

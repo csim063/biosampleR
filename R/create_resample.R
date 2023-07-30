@@ -15,7 +15,7 @@
 #' @export
 #'
 #' @examples
-#' rs <- create_resample(BCI)
+#' rs <- create_resample(BCI, reps = 10, summary = TRUE)
 create_resample <- function(data,
                             reps = 100,
                             summary = TRUE,

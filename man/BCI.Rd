@@ -234,7 +234,7 @@ A data frame with 50 rows and 225 columns:
 \item{Zuelania.guidonia}{Count for Zuelania.guidonia}}
 }
 \source{
-\url{https://www.science.org/doi/10.1126/science.1066854}
+https://www.science.org/doi/10.1126/science.1066854
 }
 \usage{
 BCI

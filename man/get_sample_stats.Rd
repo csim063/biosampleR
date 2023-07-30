@@ -29,5 +29,5 @@ Calculate biodiversity measures and summary statistics for a data set
 using repeated sampling
 }
 \examples{
-stats <- get_sample_stats(BCI)
+stats <- get_sample_stats(BCI, reps = 5)
 }

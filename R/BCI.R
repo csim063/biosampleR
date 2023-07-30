@@ -232,5 +232,5 @@
 #'  \item{Zanthoxylum.panamense}{Count for Zanthoxylum.panamense}
 #'  \item{Zanthoxylum.setulosum}{Count for Zanthoxylum.setulosum}
 #'  \item{Zuelania.guidonia}{Count for Zuelania.guidonia}}
-#' @source \url{https://www.science.org/doi/10.1126/science.1066854}
+#' @source https://www.science.org/doi/10.1126/science.1066854
 "BCI"

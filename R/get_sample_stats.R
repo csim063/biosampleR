@@ -16,7 +16,7 @@
 #' @export
 #' 
 #' @examples
-#' stats <- get_sample_stats(BCI)
+#' stats <- get_sample_stats(BCI, reps = 5)
 get_sample_stats <- function(data,
                              sites_col = 1,
                              reps = 100,
