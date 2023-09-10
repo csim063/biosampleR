@@ -1,6 +1,6 @@
 Package: biosampleR
 Title: Biodiversity Index Calculation and Bootstrap Confidence Interval Estimation
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: 
     person("Craig Eric", "Simpkins", , "simpkinscraig063@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3212-1379"))

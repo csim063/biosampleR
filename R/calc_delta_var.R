@@ -1,3 +1,5 @@
+utils::globalVariables(".data")
+
 #' Calculate the change in variance with increasing number of sites
 #'
 #' @param data A data frame containing the biodiversity indices to analyze,
@@ -64,8 +66,8 @@ calc_delta_var <- function(data,
 
     if (visualize == TRUE) {
         p <- ggplot2::ggplot(data = result,
-                            ggplot2::aes(x = num_sites,
-                                        y = sd)) +
+                            ggplot2::aes(x = .data$num_sites,
+                                        y = .data$sd)) +
                 ggplot2::geom_point() +
                 ggplot2::geom_line() +
                 ggplot2::labs(x = "Number of sites",
