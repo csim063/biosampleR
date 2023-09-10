@@ -1,10 +1,10 @@
 Package: biosampleR
 Title: Biodiversity Index Calculation and Bootstrap Confidence Interval Estimation
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: 
     person("Craig Eric", "Simpkins", , "simpkinscraig063@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3212-1379"))
-Description: Provides tools for the calculation of common biodiversity indices from count data, including species richness, abundance, Shannon diversity, Simpson diversity, and Chao1. Additionally, it incorporates bootstrapping techniques to generate multiple samples, facilitating the estimation of confidence intervals around these indices. Furthermore, the package allows for the exploration of how variation in these indices changes with differing numbers of sites, making it a useful tool with which to begin an ecological analysis.
+Description: Provides tools for the calculation of common biodiversity indices from count data. Additionally, it incorporates bootstrapping techniques to generate multiple samples, facilitating the estimation of confidence intervals around these indices. Furthermore, the package allows for the exploration of how variation in these indices changes with differing numbers of sites, making it a useful tool with which to begin an ecological analysis.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
