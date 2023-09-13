@@ -20,3 +20,8 @@ This is a resubmission. In this version I have:
 This is a resubmission. In this version I have:
 
 * Added references to literature which informed the design of my biodiversity functions, in the DESCRIPTION file.
+
+## Resubmission v1.0.4
+This is a resubmission. In this version I have:
+
+* Corrected DOI formatting in the DESCRIPTION file.
