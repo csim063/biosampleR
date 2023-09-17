@@ -23,8 +23,7 @@ devtools::install_github("csim063/biosampleR")
 ```
 
 Or you can install the stable version of biosampleR from
-[CRAN](https://cran.r-project.org/) with (the package is not yet on
-CRAN):
+[CRAN](https://cran.r-project.org/) with:
 
 ``` r
 install.packages("biosampleR")
